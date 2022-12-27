@@ -1,0 +1,10 @@
+{% extends 'Components/base.html' %}
+
+{% block content %}
+
+<form action="{% url 'Planning' %}">
+    {% csrf_token %}
+    {{form.as_p}}
+</form>
+
+{% endblock %}
